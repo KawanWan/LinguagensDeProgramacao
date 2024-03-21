@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01:Formulário</title>
+</head>
+
+<body>
+    <form method="post" action="https://www.w3schools.com/action_page.php">
+        <input type="date" name="date">
+        <br><br>
+
+        <label for="usuario">Nome:</label>
+        <input id="usuario" type="text" name="usuario" placeholder="Digite se nome de usuário"><br>
+        <label for="senha">Senha:</label>
+        <input id="senha" type="password" name="senha" placeholder="Digite sua senha">
+        <br><br>
+
+        <fieldset style="width: 300px;">
+            <legend>Dados Pessoais:</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" id="endereco" name="endereco"><br><br>
+            <label for="numero">Número:</label><br>
+            <input type="text" id="numero" name="numero"><br><br>
+            <label for="complemento">Complemento:</label><br>
+            <input type="text" id="complemento" name="complemento"><br><br>
+            <label for="cidades">Cidade:</label><br>
+            <input list="cidades" idname="cidades">
+            <datalist id="cidades">
+                <option value="Sorocaba">
+                <option value="Araçoiaba da Serra">
+                <option value="Capela">
+                <option value="Salto de Pirapora">
+                <option value="Votorantin">
+            </datalist><br>
+            <label for="estados">Estado:</label><br>
+            <select id="estados" name="estados">
+                <option value="sp">SP</option>
+                <option value="mg">MG</option>
+                <option value="rj">RJ</option>
+                <option value="rs">RS</option>
+            </select><br>
+            <label for="cep">CEP:</label><br>
+            <input type="text" id="cep" name="cep">
+        </fieldset>
+        <br><br>
+
+        <label >Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino" checked>
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="indefinido" name="genero" value="indefinido">
+        <label for="indefinido">Prefiro não falar</label>
+        <br><br>
+
+        <label >Curso:</label><br>
+        <input type="checkbox" id="curso1" name="curso1" value="ads">
+        <label for="curso1"> ADS</label><br>
+        <input type="checkbox" id="curso2" name="curso2" value="jogos">
+        <label for="curso2"> Jogos</label><br>
+        <input type="checkbox" id="curso3" name="curso3" value="gestaoDeTi">
+        <label for="curso3"> Gestão de TI</label><br>
+        <input type="checkbox" id="curso4" name="curso4" value="bacoDeDados">
+        <label for="curso4"> Banco de Dados</label>
+        <br><br>
+
+        <label >Modelo:</label><br>
+        <input type="radio" id="presencial" name="modelo" value="presencial" checked>
+        <label for="presencial">Presencial</label><br>
+        <input type="radio" id="ead" name="modelo" value="ead">
+        <label for="ead">EAD</label><br>
+        <input type="radio" id="semipresencial" name="modelo" value="semipresencial">
+        <label for="semipresencial">Semipresencial</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
